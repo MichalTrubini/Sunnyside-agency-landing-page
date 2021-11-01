@@ -354,4 +354,99 @@ h1, h2 {
   background-size: 100%;
   color: #19536b;
 }
+
+.testimonials {
+  padding: 6.4rem 2.4rem 8.6rem;
+}
+
+.testimonials__item {
+  margin-bottom: 6.4rem;
+}
+
+.testimonials__item:last-child {
+  margin-bottom: 0;
+}
+
+.testimonials__heading {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 1.973rem;
+  margin-bottom: 6.4rem;
+}
+
+.testimonials__person-pic {
+  width: 72px;
+  border-radius: 100%;
+  margin-bottom: 3.2rem;
+}
+
+.testimonials__person-statement {
+  color: #5a636c;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.13px;
+  margin-bottom: 3.2rem;
+}
+
+.testimonials__person-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #23303e;
+  letter-spacing: -0.13px;
+  line-height: 2.219rem;
+  margin-bottom: 0.9rem;
+}
+
+.testimonials__person-role {
+  font-size: 1.4rem;
+  color: #a7abae;
+  letter-spacing: -0.1px;
+  line-height: 2.5rem;
+}
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+  background: #91d4c7;
+  color: #458c7e;
+  padding: 6.4rem 3.9rem 8rem;
+}
+
+.footer__logo {
+  width: 17rem;
+  -webkit-filter: brightness(0) saturate(100%) invert(39%) sepia(43%) saturate(517%) hue-rotate(118deg) brightness(91%) contrast(92%);
+          filter: brightness(0) saturate(100%) invert(39%) sepia(43%) saturate(517%) hue-rotate(118deg) brightness(91%) contrast(92%);
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 4rem 0 8.8rem;
+}
+
+.footer__link {
+  color: #458c7e;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.13px;
+}
+
+.footer__social-icons {
+  margin-right: 2.8rem;
+}
+
+.footer__social-icons:last-child {
+  margin-right: 0;
+}
 /*# sourceMappingURL=style.css.map */

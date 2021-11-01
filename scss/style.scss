@@ -179,3 +179,93 @@ h1,h2 {
     background-size: 100%;
     color:$color-text-photography;
 }
+
+.testimonials {
+    padding: 6.4rem 2.4rem 8.6rem;
+
+    &__item {
+        margin-bottom:6.4rem;
+    }
+
+    &__item:last-child {
+        margin-bottom:0;
+    }
+
+    &__heading {
+        font-size:1.6rem;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        line-height: 1.973rem;
+        margin-bottom:6.4rem;
+    }
+
+    &__person-pic {
+        width:72px;
+        border-radius: 100%;
+        margin-bottom: 3.2rem;
+    }
+
+    &__person-statement {
+        color:$color-text-testimonials;
+        font-size:1.8rem;
+        line-height: 3.2rem;
+        letter-spacing: -0.13px;
+        margin-bottom:3.2rem;
+    }
+
+    &__person-name {
+        font-family: 'Fraunces', serif;
+        font-weight:900;
+        font-size:1.8rem;
+        color:$color-text-testimonials-name;
+        letter-spacing: -0.13px;
+        line-height: 2.219rem;
+        margin-bottom:0.9rem;
+    }
+
+    &__person-role {
+        font-size: 1.4rem;
+        color:$color-text-testimonials-role;
+        letter-spacing: -0.1px;
+        line-height: 2.5rem;
+    }
+}
+
+.gallery {
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.footer {
+    background:$background-footer;
+    color:$color-text-footer;
+    padding:6.4rem 3.9rem 8rem;
+
+    &__logo {
+        width:17rem;
+        filter: brightness(0) saturate(100%) invert(39%) sepia(43%) saturate(517%) hue-rotate(118deg) brightness(91%) contrast(92%);
+    }
+
+    &__links {
+        display:flex;
+        justify-content: space-between;
+        margin:4rem 0 8.8rem;
+    }
+
+    &__link {
+        color:$color-text-footer;
+        font-size:1.8rem;
+        line-height:2.5rem;
+        letter-spacing: -0.13px;
+    }
+
+    &__social-icons {
+        margin-right:2.8rem;
+    }
+
+    &__social-icons:last-child {
+        margin-right:0;
+    }
+} 
