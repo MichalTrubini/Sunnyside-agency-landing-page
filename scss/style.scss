@@ -5,6 +5,8 @@ body {
     background: $background-body;
     color:$color-text-body;
     text-align: center;
+    max-width:144rem;
+    margin:auto;
 }
 
 h1,h2 {
@@ -13,7 +15,7 @@ h1,h2 {
 }
 
 .header {
-    background: url(../images/mobile/image-header.jpg) no-repeat;
+    background: url(../images/mobile/image-header.jpg) no-repeat bottom center;
     background-size:cover;
     padding: 3.2rem 0 13.6rem;
 
@@ -72,6 +74,15 @@ h1,h2 {
         text-transform: uppercase;
         letter-spacing: -0.11px;
     }
+
+    &__contact:hover {
+        background: rgb(119, 205, 245);
+        color:#fff;
+    }
+
+    &__menu-dt {
+        display:none;
+    }
 }
 
 .skewed-shape {
@@ -104,6 +115,23 @@ h1,h2 {
     &__content {
         padding-top:6.4rem;
         padding-bottom:6.4rem;
+    }
+
+    &__image {
+        width:100%;    
+        height:85vw;
+    }
+
+    &__image-one {
+        background: url(../images/mobile/image-transform.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &__image-two {
+        background: url(../images/mobile/image-stand-out.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 
     &__heading {
@@ -164,7 +192,8 @@ h1,h2 {
         font-size: 1.6rem;
         letter-spacing: -0.11px;
         line-height: 2.7rem;
-        margin-top:2.7rem;
+        max-width:32.7rem;
+        margin:2.7rem auto 0;
     }
 }
 
@@ -210,7 +239,8 @@ h1,h2 {
         font-size:1.8rem;
         line-height: 3.2rem;
         letter-spacing: -0.13px;
-        margin-bottom:3.2rem;
+        max-width:32.7rem;
+        margin:0 auto 3.2rem;
     }
 
     &__person-name {
@@ -232,6 +262,10 @@ h1,h2 {
 }
 
 .gallery {
+    display:none;
+}
+
+.gallery-mb {
 
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -251,7 +285,8 @@ h1,h2 {
     &__links {
         display:flex;
         justify-content: space-between;
-        margin:4rem 0 8.8rem;
+        max-width:30rem;
+        margin:4rem auto 8.8rem;
     }
 
     &__link {
@@ -261,11 +296,254 @@ h1,h2 {
         letter-spacing: -0.13px;
     }
 
+    &__link:hover {
+        color:#fff;
+        cursor: pointer;
+    }
+
     &__social-icons {
         margin-right:2.8rem;
+    }
+
+    &__social-icons:hover {
+        cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(95%) saturate(22%) hue-rotate(344deg) brightness(105%) contrast(108%);
     }
 
     &__social-icons:last-child {
         margin-right:0;
     }
 } 
+
+@media screen and (min-width:500px) {
+    
+    .graphic-design {
+        padding:1.8rem 2.4rem 45rem;
+    }
+    
+    .photography {
+        padding:20rem 2.4rem 25rem;
+    }
+}
+
+@media screen and (min-width:750px) {
+
+    .wrapper {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .graphic-design {
+        background: url(../images/desktop/image-graphic-design.jpg) no-repeat;
+        background-size: 100%;
+        padding-top:calc(22vw + 5%);
+        padding-bottom:5vw;
+    }
+    
+    .photography {
+        background: url(../images/desktop/image-photography.jpg) no-repeat;
+        background-size: 100%;
+        padding-top:calc(22vw + 5%);
+        padding-bottom:5vw;
+    }
+
+    .offer {
+        &__paragraph {
+            max-width:33.9rem;
+            margin:1.4rem auto 0;
+            font-size:1.5rem;
+        }
+    }
+
+    .gallery-mb {
+        display:none;
+    }
+
+    .gallery {
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .testimonials {
+
+        &__items {
+            max-width:90rem;
+            margin:auto;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        &__item {
+            min-width:300px;
+        }
+
+        &__person-statement {
+            min-height:128px;
+        }
+    }
+
+    .about {
+        display:flex;
+        align-items: center;
+
+        &__one {
+            flex-direction: row-reverse;
+        }
+
+        &__image {
+            width:50%;
+        }
+
+        &__content {
+            width:50%;
+            padding-top:0;
+            padding-bottom:0;
+        }
+
+        &__image {
+            height:41.2vw;
+            max-height:59.2rem;
+        }
+
+        &__image-one {
+            background: url(../images/desktop/image-transform.jpg) no-repeat;
+            background-size: 100%;
+            background-position: center center;
+        }
+    
+        &__image-two {
+            background: url(../images/desktop/image-stand-out.jpg) no-repeat;
+            background-size: 100%;
+            background-position: center center;
+        }
+    }
+
+    .header {
+        background: url(../images/desktop/image-header.jpg) no-repeat bottom center;
+        background-size:100%;
+        padding: 3.2rem 0 10vw;
+
+        &__heading {
+            margin-top:3.8rem;
+        }
+    }
+
+    .nav {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__menu-icon {
+            display:none;
+        }
+
+        &__menu-dt {
+            display:flex;
+            align-items: center;
+        }
+
+        &__link {
+            margin-bottom:0;
+            color:#fff;
+            font-size:1.8rem;
+            margin-right:4.7rem;
+        }
+
+        &__contact {
+            background:#fff;
+        }
+
+    }
+}
+
+@media screen and (min-width:1030px) {
+    .header {
+        padding: 3.2rem 0 15vw;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+
+    .header {
+        padding: 3.4rem 0 33.2rem;
+        height:80rem;
+        line-height: 6.9rem;
+
+        &__heading {
+            font-size:5.6rem;
+            margin:10.5rem 0 9.6rem;
+        }
+    }
+
+    .about {
+        &__content {
+            padding:0 16.5rem 0 11rem;
+            text-align: left;
+        }
+
+        &__heading {
+            font-size:4rem;
+            line-height: 4.9rem;;
+        }
+
+        &__paragraph {
+            margin:3.2rem 0 4rem;
+        }
+
+        &__link {
+            margin-left:0.8rem;
+        }
+
+        &__link-border {
+            margin: 0;
+            margin-top:-10px; 
+        }
+    }
+
+    .offer {
+
+        padding:39.8rem 0 5.9rem;
+
+        &__paragraph {
+            font-size:1.6rem;
+            margin-top:2.7rem;
+        }
+    }
+
+    .testimonials {
+        padding:16rem 16.5rem;
+
+        &__items {
+            width:100%;
+            max-width: none;
+        }
+
+        &__item {
+            margin-bottom:0;
+        }
+
+        &__heading {
+            margin-bottom:8.1rem;
+        }
+
+        &__person-pic {
+            margin-bottom:5.8rem;
+        }
+
+        &__person-statement {
+            max-width:35rem;
+            min-height:auto;
+            margin-bottom:6.9rem;
+        }
+    }
+
+    .nav {
+        &__site-logo {
+            width:170px;
+            display:block;
+        }
+    }
+}
